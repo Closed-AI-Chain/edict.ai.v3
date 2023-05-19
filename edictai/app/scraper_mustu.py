@@ -382,32 +382,6 @@ def ndtv_multiple_india():
     
     return(data)
 
-def news_api():
-    print("Sources: ")
-    # Init
-    newsapi = NewsApiClient(api_key='efa6c22c503841b8944239d165f3a32c')
-
-    # /v2/top-headlines
-    top_headlines = newsapi.get_top_headlines(q=query,
-                                            # sources='bbc-news,the-verge',
-                                            # category='business',
-                                            language='en',
-                                            # country='in'
-                                            )
-
-    # /v2/everything
-    all_articles = newsapi.get_everything(q='bitcoin',
-                                        sources='bbc-news,the-verge',
-                                        domains='bbc.co.uk,techcrunch.com',
-                                        from_param='2017-12-01',
-                                        to='2017-12-12',
-                                        language='en',
-                                        sort_by='relevancy',
-                                        page=2)
-
-    # /v2/top-headlines/sources
-    sources = newsapi.get_sources()    
-
 def url_select(url):
 
     if("https://www.hindustantimes.com/" in url):
