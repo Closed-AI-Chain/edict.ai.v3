@@ -1,0 +1,284 @@
+input#bluepurple.variation(type="radio" value="1" name="color" checked)
+label(for="bluepurple")
+
+input#sunset.variation(type="radio" value="2" name="color")
+label(for="sunset")
+
+input#godiva.variation(type="radio" value="3" name="color")
+label(for="godiva")
+
+input#dark.variation(type="radio" value="4" name="color")
+label(for="dark")
+
+input#pinkaru.variation(type="radio" value="5" name="color")
+label(for="pinkaru")
+
+main
+	section.forms
+		h6 Form
+		h1 Login for more aww-someness.
+		form.form-login
+			.input__wrapper
+				label.label-form Email
+				input.input-form(type="text" placeholder="email@email.com")
+			.input__wrapper
+				label.label-form Password
+				input.input-form(type="password" placeholder="Password (At least 8 characters)")
+			.checkbox
+				input(id="checkbox-rem" type="checkbox")
+				label(for="checkbox-rem") Remember Me
+					span.box
+			a.button#login Login
+			.spinner__wrapper
+				.spinner-1
+					.spinner(data-loading="Loading...")
+					label Logging you in...
+
+	section.filter-section
+		h6 Filters
+		.filters
+			h5.filters__title Dog Type
+			.filters__item
+				.checkbox
+					input#checkbox-1(type="checkbox")
+					label(for="checkbox-1") Puppy
+						span.box
+						.tooltip.top(data-tooltip="Younger than 18 months.")
+							span
+								i.icon-info
+				span.badge.status-primary 10
+			.filters__item
+				.checkbox
+					input#checkbox-2(type="checkbox" checked)
+					label(for="checkbox-2") Young
+						span.box
+				span.badge.status-primary 5
+			.filters__item
+				.checkbox
+					input#checkbox-3(type="checkbox")
+					label(for="checkbox-3") Adult
+						span.box
+				span.badge.status-primary 20
+			.filters__item
+				.checkbox
+					input#checkbox-4(type="checkbox")
+					label(for="checkbox-4") Senior
+						span.box
+				span.badge.status-primary 8
+		.filters
+			h5.filters__title Dog Size
+			.filters__item
+				.checkbox
+					input#checkbox-5(type="checkbox")
+					label(for="checkbox-5") Small
+						span.box
+				span.badge.status-primary 9
+			.filters__item
+				.checkbox
+					input#checkbox-6(type="checkbox" checked)
+					label(for="checkbox-6") Medium
+						span.box
+				span.badge.status-primary 12
+			.filters__item
+				.checkbox
+					input#checkbox-7(type="checkbox")
+					label(for="checkbox-7") Large
+						span.box
+				span.badge.status-primary 17
+			.filters__item
+				.checkbox
+					input#checkbox-8(type="checkbox")
+					label(for="checkbox-8") XL
+						span.box
+				span.badge.status-primary 3
+				
+				
+	section.well-cta-1
+		h6 Call-to-action well: dark
+		.well-cta
+			.well-cta__text
+				h2 Having a "ruff" life?
+				p Adopt a friend that will love you unconditionally as long as you give it food and snuggles. 
+				a.button.medium Find your life companion
+			.well-cta__image
+				img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/pug.png" alt="Picture of Pug")
+				
+	section.well-cta-2
+		h6 Call-to-action well: light
+		.well-cta--form
+			.well-cta--form__text
+				h3 Subscribe to our newsletter!
+				p Get the latest news on doggodoption. We are pawsitive we will not spam you.
+			.well-cta--form__input
+				input.input-form.input--lg(type="text" placeholder="Your Email Here")
+			.well-cta--form__cta
+				a.button.secondary Subscribe
+				
+	section.tables
+		h6 Table
+		.table__wrapper
+			table.table
+				thead.table__header
+					tr
+						td Live?
+						td ID
+						td Name
+						td Breed
+						td Last Updated
+						td Status
+						td 
+				tbody.table__body
+					tr
+						td 
+							.checkbox-toggle
+								input#toggle-checkbox(type="checkbox" checked)
+								label(for="toggle-checkbox")
+						td 0045
+						td Doggo Dogg
+						td Shiba Inu
+						td 20 June 2019
+						td
+							span.badge.status-primary Available
+						td 
+							span.icon-options-vertical
+					tr
+						td 
+							.checkbox-toggle
+								input#toggle-checkbox-2(type="checkbox" checked)
+								label(for="toggle-checkbox-2")
+						td 0044
+						td Labra-thor, Strongest Avenger
+						td Labrador Retriever
+						td 20 June 2019
+						td
+							span.badge.status-error Pending
+						td 
+							span.icon-options-vertical
+					tr
+						td 
+							.checkbox-toggle
+								input#toggle-checkbox-3(type="checkbox")
+								label(for="toggle-checkbox-3")
+						td 0043
+						td Branch Manager
+						td Poodle
+						td 20 June 2019
+						td
+							span.badge.status-success Adopted
+						td 
+							span.icon-options-vertical
+					
+	section.comments
+		h6 Comments
+		.comment
+			.comment__image
+				img(src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Chris_Evans_SDCC_2014.jpg/330px-Chris_Evans_SDCC_2014.jpg" alt="Chris Evans lol")
+			.comment__info
+				h5 
+					span Chris Evans
+					span.badge.status-success 
+						i.icon-trophy
+						| Top Commenter 
+				p.comment__info__time 5 months ago
+			.comment__text This dog may be the second cutest dog ever! After my dog, Dodger, of course.
+			.comment__reaction
+				a.comment__reaction__heart
+					i.icon-heart
+					span 25 hearts
+
+	section.modals
+		h6 Modal
+		.panel
+			.panel__image
+				img(src="https://images.pexels.com/photos/1498925/pexels-photo-1498925.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&w=500" alt="Human and Dog")
+			.panel__info
+				h2 You are a trooper!
+				p 
+					| Thank you for your interest in 
+					strong Doggo Dogg. 
+					| We will get back to you in 3 to 5 business days. 
+				//p We would also like to take the oppawtunity to thank you for choosing to adopt, not shop.
+				//.alert.status-error.non-collapsible
+					strong Important: 
+					| Please do not email us before we get back to you. You will be automatically be placed at the back of the email queue if you do so.
+			.panel__cta
+				a.button.secondary Got it!
+				
+	section.media-card-1
+		h6 Media Card I
+		.profile.profile-imgonly
+			.profile__image
+				img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/dog.png" alt="Doggo")
+			.profile__info
+				h3 Doggo Dogg
+				p.profile__info__extra A very good boi that loves playing fetch and ice-cream! Gentle with everyone. Scared of the rain.
+			.profile__stats
+				p.profile__stats__title Type
+				h5.profile__stats__info Puppy
+			.profile__stats
+				p.profile__stats__title Size
+				h5 Medium
+			.profile__stats
+				p.profile__stats__title Weight
+				h5.profile__stats__info 45.85 lbs
+			.profile__cta
+				a.button Adopt Doggo!
+	
+	section.media-card-2
+		h6 Media Card II
+		.profile.profile-default
+			.profile__image
+				img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/dog.png" alt="Doggo")
+			.profile__info
+				h3 Doggo Dogg
+				p.profile__info__extra A very good boi that loves playing fetch and ice-cream! Gentle with everyone. Scared of the rain.
+			.profile__stats
+				p.profile__stats__title Type
+				h5.profile__stats__info Puppy
+			.profile__stats
+				p.profile__stats__title Size
+				h5 Medium
+			.profile__stats
+				p.profile__stats__title Weight
+				h5.profile__stats__info 45.85 lbs
+			.profile__cta
+				a.button Adopt Doggo!
+	
+	section.media-card-3
+		h6 Media Card III
+		.profile.profile-long
+			.profile__image
+				img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/dog.png" alt="Doggo")
+			.profile__info
+				h3 Doggo Dogg
+				p.profile__info__extra A very good boi that loves playing fetch and ice-cream! Gentle with everyone. Scared of the rain.
+			.profile__stats
+				p.profile__stats__title Type
+				h5.profile__stats__info Puppy
+			.profile__stats
+				p.profile__stats__title Size
+				h5 Medium
+			.profile__stats
+				p.profile__stats__title Weight
+				h5.profile__stats__info 45.85 lbs
+			.profile__cta
+				a.button Adopt Doggo!
+
+footer
+	.explanation
+		| Part of the  
+		a(href="https://codepen.io/collection/DQvYpQ" target="_blank") CSS Grid collection here
+		| . A continuation of 
+		a(href="https://codepen.io/oliviale/full/mgWjpq" target="_blank") Part I
+		|  and 
+		a(href="https://codepen.io/oliviale/full/WqwOzv" target="_blank") Part II
+		| .
+	.social
+		a(href="https://twitter.com/meowlivia_" target="_blank")
+			i.icon-social-twitter.icons
+		a(href="https://github.com/oliviale" target="_blank")
+			i.icon-social-github.icons
+		a(href="https://dribbble.com/oliviale" target="_blank")
+			i.icon-social-dribbble.icons
+			
+	

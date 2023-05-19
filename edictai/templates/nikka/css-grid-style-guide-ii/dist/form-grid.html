@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="UTF-8">
+  <title>Edict form </title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,500,500i,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet'
+    href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css'>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <input class="variation" id="bluepurple" type="radio" value="1" name="color" checked="checked" />
+  <label for="bluepurple"></label>
+  <input class="variation" id="sunset" type="radio" value="2" name="color" />
+  <label for="sunset"></label>
+  <input class="variation" id="godiva" type="radio" value="3" name="color" />
+  <label for="godiva"></label>
+  <input class="variation" id="dark" type="radio" value="4" name="color" />
+  <label for="dark"></label>
+  <input class="variation" id="pinkaru" type="radio" value="5" name="color" />
+  <label for="pinkaru"></label>
+  <script>
+    window.onload = function(){
+      var button = document.getElementById("dark"); 
+      button.click(); 
+    }
+  </script>
+  <main>
+
+    <section class="forms">
+      <h6>Form</h6>
+      <h1>Enter a website for more awesomeness.</h1>
+      <form class="form-login" action="" method="post">
+        {% csrf_token %}
+        <div class="input__wrapper">
+          <label class="label-form">Website</label>
+          <input class="input-form" name="url" type="text" placeholder="https://www.thehindu.com/" />
+        </div>
+        <div class="input__wrapper">
+          <label class="label-form">Video name</label>
+          <input class="input-form" type="text" placeholder="Video_news_1.mp4" />
+        </div>
+        <div class="checkbox">
+          <input id="checkbox-rem" type="checkbox" />
+          <label for="checkbox-rem">Remember Me<span class="box"></span></label>
+        </div><input type="submit" class="button" id="login">
+       
+        <div class="spinner__wrapper">
+          <div class="spinner-1">
+            <div class="spinner" data-loading="Loading..."></div>
+            <label>Creating your video...</label>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section class="well-cta-2">
+      <h6>Call-to-action well: light</h6>
+      <div class="well-cta--form">
+        <div class="well-cta--form__text">
+          <h3>Subscribe to our newsletter!</h3>
+          <p>Get the latest news on doggodoption. We are pawsitive we will not spam you.</p>
+        </div>
+        <div class="well-cta--form__input">
+          <input class="input-form input--lg" type="text" placeholder="Your Email Here" />
+        </div>
+        <div class="well-cta--form__cta"><a class="button secondary">Subscribe</a></div>
+      </div>
+    </section>
+
+    <section class="tables">
+      <h6>Table</h6>
+      <div class="table__wrapper">
+        <table class="table">
+          <thead class="table__header">
+            <tr>
+              <td>Live</td>
+              <td>ID</td>
+              <td>Name</td>
+              <td>Link</td>
+              <td>Last Updated</td>
+              <td>Status</td>
+              <td> </td>
+            </tr>
+          </thead>
+          <tbody class="table__body">
+            <tr>
+              <td>
+                <div class="checkbox-toggle">
+                  <input id="toggle-checkbox" type="checkbox" checked="checked" />
+                  <label for="toggle-checkbox"></label>
+                </div>
+              </td>
+              <td>01</td>
+              <td>Video 1</td>
+              <td>www.youtube.com</td>
+              <td>16 April 2023</td>
+              <td><span class="badge status-primary">Available</span></td>
+              <td> <span class="icon-options-vertical"></span></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="checkbox-toggle">
+                  <input id="toggle-checkbox-2" type="checkbox" checked="checked" />
+                  <label for="toggle-checkbox-2"></label>
+                </div>
+              </td>
+              <td>02</td>
+              <td>Video 2</td>
+              <td>www.youtube.com</td>
+              <td>16 April 2023</td>
+              <td><span class="badge status-error">Pending</span></td>
+              <td> <span class="icon-options-vertical"></span></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="checkbox-toggle">
+                  <input id="toggle-checkbox-3" type="checkbox" />
+                  <label for="toggle-checkbox-3"></label>
+                </div>
+              </td>
+              <td>03</td>
+              <td>Video 3</td>
+              <td>www.youtube.com</td>
+              <td>16 April 2023</td>
+              <td><span class="badge status-success">Adopted</span></td>
+              <td> <span class="icon-options-vertical"></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="comments">
+      <h6>Comments</h6>
+      <div class="comment">
+        <div class="comment__image"><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Chris_Evans_SDCC_2014.jpg/330px-Chris_Evans_SDCC_2014.jpg"
+            alt="Chris Evans lol" /></div>
+        <div class="comment__info">
+          <h5> <span>Chris Evans</span><span class="badge status-success"> <i class="icon-trophy"></i>Top Commenter
+            </span></h5>
+          <p class="comment__info__time">5 months ago</p>
+        </div>
+        <div class="comment__text">Edict.ai is like having a personal newsroom at my fingertips! <br>
+          The AI-powered video conversion and news authentication features are game-changers. <br>
+          It is definitely going to revolutionize the way we consume news and information!</div>
+        <div class="comment__reaction"><a class="comment__reaction__heart"><i class="icon-heart"></i><span>25
+              hearts</span></a></div>
+      </div>
+    </section>
+
+    <section class="media-card-1">
+      <h6>Media Card I</h6>
+      <div class="profile profile-imgonly">
+        <div class="profile__image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/dog.png"
+            alt="Doggo" /></div>
+        <div class="profile__info">
+          <h3>Aapki video</h3>
+        </div>
+        <div class="profile__stats">
+          <p class="profile__stats__title">Type</p>
+          <h5 class="profile__stats__info">Puppy</h5>
+        </div>
+        <div class="profile__stats">
+          <p class="profile__stats__title">Size</p>
+          <h5>Medium</h5>
+        </div>
+        <div class="profile__stats">
+          <p class="profile__stats__title">Weight</p>
+          <h5 class="profile__stats__info">45.85 lbs</h5>
+        </div>
+        <div class="profile__cta"><a class="button">See video </a></div>
+      </div>
+    </section>
+    
+  </main>
+  <footer>
+  </footer>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src="{% static 'script.js' %}"></script>
+
+</body>
+
+</html>
