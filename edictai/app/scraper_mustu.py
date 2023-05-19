@@ -1,6 +1,5 @@
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-from newsapi import NewsApiClient
 from selenium import webdriver
 from bs4 import BeautifulSoup
 import urllib.request
