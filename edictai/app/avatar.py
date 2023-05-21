@@ -31,7 +31,7 @@ def create_a_talk(text):
   headers = {
       "accept": "application/json",
       "content-type": "application/json",
-      "authorization": "Basic Ym1sMlpYY3hNakExTjBCaGNIQjRZWEJwTG1OdmJROmlVQWFaeUJVLVFvZU5QVUtLUS1IXw=="
+      "authorization": "Basic Y21sMGFXbzFPVGt5TjBCallYSndaWFJ5WVM1amIyMDp5Njh6eTUwNUl6NVlGVnVDNWc2eEk="
   }
 
   response = requests.post(url, json=payload, headers=headers)
@@ -53,7 +53,7 @@ def get_a_talk(id):
 
   headers = {
       "accept": "application/json",
-      "authorization": "Basic Ym1sMlpYY3hNakExTjBCaGNIQjRZWEJwTG1OdmJROmlVQWFaeUJVLVFvZU5QVUtLUS1IXw=="
+      "authorization": "Basic Y21sMGFXbzFPVGt5TjBCallYSndaWFJ5WVM1amIyMDp5Njh6eTUwNUl6NVlGVnVDNWc2eEk="
   }
 
   response = requests.get(url, headers=headers)
