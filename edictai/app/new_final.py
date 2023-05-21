@@ -131,6 +131,7 @@ def edict_video(url):
 
         # textembed=TextClip(new_chunk,fontsize=40,color="white",font=FONT_FILE,stroke_color="black",stroke_width=1).set_position((x_coordinate,970)).set_duration(audio_duration)
 #         final_clip=CompositeVideoClip([sub_vid,textembed])
+        final_clip = sub_vid
 
         final_filename = f"videos/chunk_{i}.mp4"
          
