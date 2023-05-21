@@ -127,7 +127,7 @@ def edict_video(url):
         # x_coordinate = center_point - (text_width/2)
         # draw.text((x_coordinate,1160), head_1, fill=FONT_COLOR, font=FONT_FILE3)
 
-        textembed=TextClip(new_chunk,fontsize=40,color="white",font="Arial-Rounded-MT-Bold",stroke_color="black",stroke_width=1).set_position(("center",973)).set_duration(did_duration)
+        textembed=TextClip(new_chunk,fontsize=40,color="white",font="fonts/RobotoSlab-Regular.ttf",stroke_color="black",stroke_width=1).set_position(("center",973)).set_duration(did_duration)
 
         # textembed=TextClip(new_chunk,fontsize=40,color="white",font=FONT_FILE,stroke_color="black",stroke_width=1).set_position((x_coordinate,970)).set_duration(audio_duration)
         final_clip=CompositeVideoClip([sub_vid,textembed])
