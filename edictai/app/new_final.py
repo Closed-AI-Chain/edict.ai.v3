@@ -17,7 +17,6 @@ from moviepy.editor import VideoFileClip, concatenate_videoclips
 import json
 import time
 from moviepy.editor import *
-from transformers import SpeechT5Processor, SpeechT5ForTextToSpeech, SpeechT5HifiGan
 import torch
 import soundfile as sf
 from datasets import load_dataset
