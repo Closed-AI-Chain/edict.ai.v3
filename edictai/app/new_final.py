@@ -75,13 +75,13 @@ def edict_video(url):
         #         print(image_filenames)
 
     # Studio Did 
-#     for i, chunk in enumerate(chunks):
-#         # audio_filename = large_tts(chunk, i)
-#         did_filename = create_a_video(f"did_chunk_{i}",chunk)
-#         # audio_filenames.append(audio_filename)
-#         did_filenames.append(did_filename)
     for i, chunk in enumerate(chunks):
-        did_filenames.append(f"videos/did_chunk_{i}.mp4")
+        # audio_filename = large_tts(chunk, i)
+        did_filename = create_a_video(f"did_chunk_{i}",chunk)
+        # audio_filenames.append(audio_filename)
+        did_filenames.append(did_filename)
+    # for i, chunk in enumerate(chunks):
+    #     did_filenames.append(f"videos/did_chunk_{i}.mp4")
 
     for i, chunk in enumerate(chunks):
 
